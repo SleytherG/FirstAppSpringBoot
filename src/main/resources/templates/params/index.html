@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8" />
+  <title th:text="${titulo}"></title>
+</head>
+<body>
+<h1 th:text="${titulo}"></h1>
+<ul>
+  <li>
+    <a th:href="@{/params/string(texto='Hola desde Index')}">/params/string?texto=Hola desde Index</a>
+  </li>
+  <li>
+    <a th:href="@{/params/string(texto='Que tal Sleyther!')}">/params/string?texto=Que tal Sleyther!</a>
+  </li>
+  <li>
+    <a th:href="@{/params/mix-params(saludo='Cómo estas Sleyther', numero = 26)}">/params/mix-params?saludo=Como estas Sleyther&numero=26</a>
+  </li>
+  <li>
+    <a th:href="@{/params/mix-params-request(saludo='Cómo estas Sleyther', numero = 50)}">/params/mix-params-request?saludo=Como estas Sleyther&numero=50</a>
+  </li>
+</ul>
+</body>
+</html>

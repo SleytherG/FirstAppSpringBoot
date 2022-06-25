@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8" />
+  <title th:text="${titulo}"></title>
+</head>
+<body>
+<h1 th:text="${titulo}"></h1>
+<h4  th:if="${resultado}" th:text="${resultado}"></h4>
+<h4  th:if="${texto}" th:text="${texto}"></h4>
+<h4  th:if="${numero}" th:text="${numero}"></h4>
+</body>
+</html>
